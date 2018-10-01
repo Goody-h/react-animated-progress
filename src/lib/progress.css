@@ -1,0 +1,71 @@
+.prog {
+    display: inline-block
+}
+
+.prog-wrapper,
+.prog-wrapper div {
+    width: 70px
+}
+
+.prog-wrapper div {
+    transition: all .5s linear
+}
+
+.prog-wrapper {
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    margin: 5px 10px
+}
+
+.prog-bottom {
+    transform: translateY(35px) rotate(0deg)
+}
+
+.prog-state-load .prog-top {
+    position: relative;
+    height: 70px;
+    border-bottom: 3px solid #00c853;
+    border-right: 3px solid #00c853;
+    border-radius: 50%;
+    animation: spin infinite 2s linear;
+}
+
+.prog-state-fail .prog-wrapper div {
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    border-top: 3px solid #d50000;
+}
+
+.prog-state-fail .prog-top {
+    transform: translateY(35px) rotate(45deg);
+}
+
+.prog-state-fail .prog-bottom {
+    transform: translateY(35px) rotate(-45deg);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        border-color: #00c853
+    }
+    50% {
+        transform: rotate(180deg);
+        border-color: #64dd17
+    }
+    100% {
+        transform: rotate(360deg);
+        border-color: #aeea00
+    }
+}
+
+.prog-state-done .prog-top {
+    position: relative;
+    height: 35px;
+    border-bottom: 3px solid #64dd17;
+    border-left: 5px solid #64dd17;
+    transform: rotate(-45deg);
+    border-bottom-left-radius: 3px
+}
