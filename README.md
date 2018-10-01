@@ -1,4 +1,4 @@
-# react-progress
+# react-animated-progress
 A simple react progress component with states for loading, finished and error. 
 
 ## License

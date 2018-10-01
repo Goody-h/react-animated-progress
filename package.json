@@ -1,5 +1,5 @@
 {
-    "name": "@orsteg/react-progress",
+    "name": "@orsteg/react-animated-progress",
     "version": "0.1.0",
     "description": "A simple react progress component with states for loading, finished and error.",
     "main": "dist/index.js",
@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Goody-h/react-progress.git"
+        "url": "git+https://github.com/Goody-h/react-animated-progress.git"
     },
     "keywords": [
         "react",
@@ -23,9 +23,9 @@
     "author": "Goodhope Ordu <goodhopeordu@yahoo.com> (https://orsteg.com)",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/Goody-h/react-progress/issues"
+        "url": "https://github.com/Goody-h/react-animated-progress/issues"
     },
-    "homepage": "https://github.com/Goody-h/react-progress#readme",
+    "homepage": "https://github.com/Goody-h/react-animated-progress#readme",
     "dependencies": {
         "prop-types": "^15.6.2"
     },
